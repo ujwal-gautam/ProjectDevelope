@@ -1,0 +1,310 @@
+
+/* Add Your Styles Here */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+/* ------------ Main Header ----------- */
+.main-header {
+    background-image: url("img/news_pic.jpg");
+    background-size: cover;
+    padding: 15px;
+    color: white;
+    text-align: right;
+
+}
+
+/* ---------- Main Navigationbar ------------- */
+.main-nav{
+    background-color: black;
+    overflow: hidden;
+}
+.main-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-nav ul li{
+    float: left;
+}
+.main-nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    display: block;
+}
+.main-nav ul li a:hover{
+    background-color: #7a8567;
+}
+
+.main-nav ul li a.active{
+    background-color: #5ec95a;
+}
+.latest-news{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 7px;
+    margin-top: 5px;
+    overflow: hidden; /* mandatory */
+    animation: latest-news 2s infinite linear;
+}
+@keyframes latest-news {
+    0%,50%,100%{background-color: black;}
+    25%,75%{background-color: #7a8567;}
+}
+.latest-news span{
+    color: orangered;
+}
+.latest-news p{
+    margin: 0;
+    animation: para 45s infinite linear;
+}
+@keyframes para {
+    0%{transform: translateX(100%)}
+    100%{transform: translateX(-100%)}
+}
+
+.sticky{
+    width: 100%;
+    top: 0;
+    position: sticky;
+
+}
+.dropdown_list{
+    background-color: black;
+    position: absolute;/* to stick with parent */
+    display: none;/* to hide the list */
+
+}
+.dropdown_list a{
+    background-color:black;
+    display: block;
+    box-shadow: 0 0 15px black;
+}
+.dropdown:hover .dropdown_list{
+    display: block; /* to display the list */
+}
+aside{
+    float:right;
+    width: 300px;
+    height: 1550px;
+    text-align: center;
+    padding-left: 12px;
+    overflow: hidden;
+    margin-right: 05px;
+
+
+}
+aside h3 {
+
+    background: linear-gradient(to right, forestgreen, black, forestgreen);
+    color: white;
+    border-radius: 50px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+
+}
+
+.aside-h3{
+    color: black;
+    font-size: 18px;
+    padding: 7px;
+    margin-top: 5px;
+    overflow-y: hidden;
+    height: 100px;
+
+}
+.aside-h3 p{
+    margin: 0;
+    animation: para1 10s infinite linear;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+@keyframes para1{
+    0%{transform: translateY(-100%)}
+    100%{transform: translateY(100%)}
+}
+
+
+aside h5{
+    color: black;
+    font-size: 12px;
+}
+.zoom{
+    width: 285px;
+    height: 150px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 15px black;
+
+}
+.zoom img{
+    width: inherit;
+    height: inherit;
+    transition: all 1s;
+}
+.zoom iframe{
+    width: inherit;
+    height: inherit;
+    transition: all 1s;
+}
+.zoom:hover img{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+    overflow: hidden;
+}
+.news {
+   /* border: 2px solid black;*/
+    padding: 15px 10px;
+    box-shadow: 0 0 15px black;
+    margin-right: 330px;
+    border-radius: 15px;
+    height:auto;
+    margin-left: 05px;
+
+}
+.news p{
+    text-align: left;
+    width: 700px;
+
+}
+
+.news img {
+    border-radius: 15px;
+    width: 280px;
+    height: 150px;
+    float: right;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+    overflow: hidden;
+}
+.news-zoom{
+    width: 280px;
+    margin-top: 40px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    float: right;
+}
+.news-zoom img{
+    width: inherit;
+    height: inherit;
+    transition: all 1s;
+}
+.news-zoom:hover img{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+    overflow: hidden;
+}
+.home-news-section {
+    margin-right: 330px;
+    border-radius: 15px;
+    margin-left: 5px;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 15px black;
+    padding: 20px;
+
+}
+
+.home-news-article h3 {
+    color: black;
+    text-align: left;
+    padding: 05px;
+
+}
+ iframe{
+    width: 400px;
+    height: 150px;
+    float: right;
+     border: 2px solid white;
+     border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+.p2:hover img{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.legend{
+
+    border-radius: 15px;
+    margin:10px 330px 0 5px;
+    border:hidden;
+    padding-bottom: 40px;
+    box-shadow: 0 0 15px black;
+}
+.legend-article{
+
+    width: 250px;
+    float: left;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 1s;
+}
+legend{
+    background: linear-gradient(to left, forestgreen, black, forestgreen);
+    color: white;
+    box-shadow: 0 0 15px black;
+    text-align: left;
+    font-size: 22px;
+    padding: 05px;
+    border-radius: 50px;
+
+}
+
+.legend-article:hover{
+    box-shadow: 0 0 15px black;
+}
+.legend-zoom{
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto;
+}
+.legend-zoom img{
+    width: inherit;
+    height: inherit;
+    transition: all 1s;
+
+}
+.legend-zoom:hover img{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+/* ---------technology ------*/
+.large-img{
+    border-radius: 15px;
+    margin:3px 575px 03px 05px;
+    border:hidden;
+    box-shadow: 0 0 15px black;
+    overflow: hidden;
+}
+
+.large-img img{
+    margin:inherit;
+    box-shadow: 0 0 15px black;
+    overflow: hidden;
+
+}
+.large-zoom:hover img{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+/* ------------- Main Footer ------------- */
+.main-footer{
+    background: linear-gradient(to right,#7a8567,black,#7a8567);
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+.main-footer a {
+    color: orange;
+}
